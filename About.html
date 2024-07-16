@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="About.css">
+    <title></title>
+  </head>
+  <body>
+
+    <section>
+      <header>
+        <div class="Toggle">
+          <i class="fa-solid fa-bars" id="toggle"></i>
+        </div>
+        <div class="navigation" id="nav">
+          <img src="images.jpeg">
+          <a class="Home" href="home.html">Home</a>
+          <a class="Services" href="Services.html">Sevices</a>
+          <a class="About" href="About.html">About us</a>
+          <a class="Contact" href="Contact.html">Contact us</a> 
+        </div>
+      </header>
+      <div class="content">
+        <div class="Titles">
+        <h3>About Us</h3>
+        <h2>Security First</h2>
+        </div>
+        <div class="paragraph">
+          <h2>Online Bank</h2>
+          <p>Online Bank is a financial organization that aims to facilitate and accelerate the bank transfer operation.<br>
+            It is true that the organization started recently but with hard work, 
+            collaboration and of course your trust we will manage to accomplish everything you wish.<br>
+            Online Bank uses the latest computer security technologies and cryptography (HSA, RSA, etc.), as well as the robust communication protocols (HTTPS, SSL, TLS, etc.).
+            <br></p>
+            <p>
+            Online Bank is your trust financial support to start your e-commerce project or purchase your needs, because
+            Honesty, Perfection, Accompaniment and Loyalty are our DNA constituents.
+          </p>
+        </div>
+        <div class="ilustration">
+          <img src="O_B_logo.jpeg">
+        </div>
+      </div>
+    </section>
+    <div class="media_icons">
+      <div class="logo_bottom"><img src="images.jpeg"></div>
+      <div class="About_OB">
+        <h3>About Us</h3>
+        <p>Your trusted bank to manage your financial resources, gain <br>your time and invest your effort.</p>
+      </div>
+      <div class="Location">
+        <h3>Location</h3>
+        <p>Maroc<br>
+          Sala aljadida<br>
+          Hassan 2<br>
+          Phone: +2127 0444 7587<br>
+          Mail : chanemarouan@gmail.com<br>
+        </p>
+      </div>
+      <div class="Bar"></div>
+      <div class="social_network">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/marouan-chane-317003216/"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+    <script>
+      var btn = document.getElementById("toggle");
+      var cible = document.getElementById("nav")
+      btn.addEventListener("click",myFun);
+
+      function myFun(){
+        var btn = document.getElementById("toggle");
+        var cible = document.getElementById("nav")
+        btn.addEventListener("click",myFun);
+        if (cible.style.display == "block")
+        {
+          cible.style.display = "none";
+        }
+          else
+          {
+            cible.style.display = "block";
+          }
+
+      }
+    </script>
+  </body>
+</html>

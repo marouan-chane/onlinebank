@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="Contact.css">
+    <title></title>
+  </head>
+  <body>
+
+    <section>
+      <header>
+        <div class="Toggle">
+          <i class="fa-solid fa-bars" id="toggle"></i>
+        </div>
+        <div class="navigation" id="nav">
+          <img src="images.jpeg">
+          <a class="Home" href="home.html">Home</a>
+          <a class="Services" href="Services.html">Sevices</a>
+          <a class="About" href="About.html">About us</a>
+          <a class="Contact" href="Contact.html">Contact us</a> 
+        </div>
+      </header>
+      <div class="content">
+        <h4>Information Request</h4>
+        <h5>Fields marked with asterisks (*) are required.</h5>
+        <h5>Contact Information</h5>
+        <div class="contact">
+          <form action="">
+            <label for="fname">First Name*</label>
+            <input type="text" id="fname" name="firstname" placeholder="Please enter your first name..">
+        
+            <label for="lname">Last Name*</label>
+            <input type="text" id="lname" name="lastname" placeholder="Please enter your last name..">
+
+            <label for="email">Email*</label>
+            <input type="text" id="email" name="email" placeholder="Please enter your Email..">
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" placeholder="Please enter your phone number..">
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" placeholder="Please enter your country..">
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="Please enter your city..">
+            <label for="info"> Explain your need*</label>
+            <textarea id="subject" name="subject" placeholder="Please provide more details about your request." style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        
+      </div>
+    </section>
+    <div class="media_icons">
+      <div class="logo_bottom"><img src="images.jpeg"></div>
+      <div class="About_OB">
+        <h3>About Us</h3>
+        <p>Your trusted bank to manage your financial resources, gain <br>your time and invest your effort.</p>
+      </div>
+      <div class="Location">
+        <h3>Location</h3>
+        <p>Maroc<br>
+          Sala aljadida<br>
+          Hassan 2<br>
+          Phone: +2127 0444 7587<br>
+          Mail : chanemarouan@gmail.com<br>
+        </p>
+      </div>
+      <div class="Bar"></div>
+      <div class="social_network">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/marouan-chane-317003216/"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+    <script>
+      var btn = document.getElementById("toggle");
+      var cible = document.getElementById("nav")
+      btn.addEventListener("click",myFun);
+
+      function myFun(){
+        var btn = document.getElementById("toggle");
+        var cible = document.getElementById("nav")
+        btn.addEventListener("click",myFun);
+        if (cible.style.display == "block")
+        {
+          cible.style.display = "none";
+        }
+          else
+          {
+            cible.style.display = "block";
+          }
+
+      }
+    </script>
+  </body>
+</html>
