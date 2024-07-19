@@ -138,14 +138,14 @@ header{
     font-size: 30px;
     display: none;
 }
-@media only screen and (max-width: 1140px) {
+@media (max-width: 1140px) {
     /* For mobile phones: */
     [class*="Bar"] {
       display: none;
     }
   }
 
-@media only screen and (max-width: 1140px) {
+@media (max-width: 1140px) {
     /* For mobile phones: */
     .Toggle{
         display: block;
