@@ -170,4 +170,7 @@ header{
         width: 80%;
         padding-left: 2%;
     }
+	#toggle{
+        font-size: 40px;
+    }
   }
