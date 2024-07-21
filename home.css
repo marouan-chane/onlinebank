@@ -135,7 +135,7 @@ header{
     background: rgba(22, 127, 180, 0.789);
     text-align: right;
     box-sizing: border-box;
-    font-size: 30px;
+    font-size: 45px;
     display: none;
 }
 @media only screen and (max-width: 1040px) {
